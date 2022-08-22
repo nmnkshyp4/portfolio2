@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/61f9300746.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color: #f3f4f7;
+        }
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .cont1{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: white;
+           
+        }
+        .list1{
+            display: inline-block;
+            padding: 10px 20px;
+        }
+        .list1:hover{
+            background-color: #f3f4f7;
+            border-radius: 25px;
+        }
+        .nav1,.nav2,.nav3,.nav4{
+            display: inline-block;
+            /* padding: 10px 0px; */
+            padding-top: 20px;
+            
+        }
+        .nav6{
+            padding-bottom: 8px;
+            padding-top: 0px;
+            
+        }
+        .cont1 .nav2 .navlist li{
+            padding: 0px 20px;
+        }
+        .nav1{
+            font-size: large;
+        }
+        .cont2{
+            background-color: #f3f4f7;
+        }
+        .i11{
+            padding: 20px 115px;
+        }
+        .i21{
+            width: 430px;
+            padding: 20px 30px;
+            border: 1px solid white;
+            margin-left: 90px;
+            margin-top: 22px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        
+        .list10{
+            display: inline-block;
+            padding: 5px 6px;
+        }
+        .i211,.i212{
+            display: inline-block;
+            padding: 4px 0px;
+            
+        }
+        .i21,.i22,.i23{
+            display: inline-block;
+        }
+        .i211,.i212,.i213,.i214{
+            padding: 5px 10px;
+        }
+        .list3{
+            padding: 35px 40px;
+            border: 1px solid white;
+            margin: 10px;
+            background-color: white;
+            border-radius: 10px;
+            
+        }
+        .list5{
+            display: inline-block;
+            padding: 0px 20px;
+        }
+        .i22{
+            padding: 10px 50px;
+            
+            
+        }
+        .i23{
+            border: 1px solid white;
+            border-radius: 10px;
+            padding: 33px 50px;
+            background-color: white;
+            
+        }
+        .i231,.i232{
+            padding: 6px 0px;
+        }
+        
+        .cont3{
+            background-color: #f3f4f7;
+            
+        }
+        .cont4{
+            background-color:#f3f4f7;
+            margin-left: 90px;
+            margin-right: 150px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .i31,.i32{
+            display: inline-block; 
+        }
+        
+        .i32{
+            color: blue;
+        }
+        .i32:hover{
+            background-color: rgb(199, 210, 219);
+            padding: 2px;
+            border-radius: 10%;
+        }
+
+        .cont5{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-right: 70px;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        .i41{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 2%;
+            padding: 22px;
+        }
+        .i411{
+            display: flex;
+            justify-content: space-between;
+        }
+        .i4121{
+            background-color: rgb(199, 210, 219);
+            width: 80px;
+            padding: 3px;
+            color: blue;
+            border-radius: 10%;
+        }
+        .i414{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .i42{
+            display: flex;
+            flex-direction: column;
+            
+            background-color: white;
+            border-radius: 2%;
+            padding: 22px;
+        }
+        .i421{
+            display: flex;
+            justify-content: space-between;
+        }
+        .i4221{
+            background-color: rgb(243, 171, 169);
+            width: 70px;
+            padding: 3px;
+            color: red;
+            border-radius: 10%;
+        }
+        .i424{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .i43{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 2%;
+            padding: 22px;
+        }
+        .i431{
+            display: flex;
+            justify-content: space-between;
+        }
+        .i4321{
+            background-color: rgb(199, 210, 219);
+            width: 110px;
+            padding: 3px;
+            color: blue;
+            border-radius: 10%;
+        }
+        .i434{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        img{
+            border-radius: 50%;
+        }
+
+        .cont6{
+            background-color:#f3f4f7;
+            margin-left: 90px;
+            margin-right: 150px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .i51,.i52{
+            display: inline-block; 
+        }
+        
+        .i52{
+            color: blue;
+        }
+        .i52:hover{
+            background-color: rgb(199, 210, 219);
+            padding: 2px;
+            border-radius: 10%;
+        }
+        .i711,.i712,.i713{
+            display: inline-block;
+        }
+        .i7111{
+            display: inline-block;
+        }
+        .cont7{
+            display: flex;
+            flex-direction: column;
+            
+            margin-left: 90px;
+            margin-right: 130px;
+        }
+        .i71{
+            display: flex;
+            justify-content: space-between;
+            padding: 25px;
+            border: 1px solid white;
+            border-radius: 7px;
+            background-color: white;
+            margin: 10px;
+        }
+        
+
+        .i721,.i722,.i723{
+            display: inline-block;
+        }
+        .i7211{
+            display: inline-block;
+        }
+        
+        .i72{
+            display: flex;
+            justify-content: space-between;
+            padding: 25px;
+            border: 1px solid white;
+            border-radius: 7px;
+            background-color: white;
+            margin: 10px;
+        }
+
+        .i731,.i732,.i733{
+            display: inline-block;
+        }
+        .i7311{
+            display: inline-block;
+        }
+        
+        .i73{
+            display: flex;
+            justify-content: space-between;
+            padding: 25px;
+            border: 1px solid white;
+            border-radius: 7px;
+            background-color: white;
+            margin: 10px;
+        }
+
+        .i741,.i742,.i743{
+            display: inline-block;
+        }
+        .i7411{
+            display: inline-block;
+        }
+        
+        .i74{
+            display: flex;
+            justify-content: space-between;
+            padding: 25px;
+            border: 1px solid white;
+            border-radius: 7px;
+            background-color: white;
+            margin: 10px;
+        }
+        .i712,.i722{
+            border: 1px solid rgb(199, 210, 219);
+            background-color: rgb(199, 210, 219);
+            padding: 3px 5px;
+            border-radius: 3px;
+            color: blue;
+        }
+        .i732,.i742{
+            border: 1px solid #e9eaea;
+            background-color: #e9eaea;
+            padding: 3px 5px;
+            border-radius: 3px;
+            color: black;
+        }
+        .i7111{
+            border: 1px solid #fde6e7;
+            background-color: #fde6e7;
+            padding: 2px;
+            border-radius: 3px;
+            color: red;
+        }
+        .i7211,.i7311{
+            border: 1px solid #ffefe9;
+            background-color: #ffefe9;
+            padding: 2px;
+            border-radius: 3px;
+            color: rgb(247, 102, 19);
+        }
+        .i7411{
+            border: 1px solid rgb(209, 241, 24);
+            background-color: rgb(209, 241, 24);
+            padding: 2px;
+            border-radius: 3px;
+            color: rgb(18, 214, 18);
+        }
+        .cont8{
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+
+        }
+        .i81{
+            border: 1px solid blue;
+            color: blue;
+            padding: 5px 13px;
+            border-radius: 10px;
+        }
+        .i81:hover{
+            background-color: blue;
+            color: white;
+            box-shadow: 0px 2px blue;
+        }
+        .cont9{
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+            padding: 25px;
+        }
+        .list{
+            display: inline-block;
+        }
+        .list:hover{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <section class="cont1">
+        <div class="nav1"><strong>DASHBOARD</strong></div>
+        <div class="nav2">
+            <ul class="navlist" type="none">
+                <li class="list1"><i class="fa fa-home"></i> Home</li>
+                <li class="list1"><i class="fa-solid fa-file"></i>  Projects</li>
+                <li class="list1"><i class="fa-solid fa-list-check"></i> Tasks</li>
+                <li class="list1"><i class="fa-solid fa-chart-column"></i> Reports</li>
+                <li class="list1"><i class="fa-solid fa-sliders"></i> Settings</li>
+            </ul>
+        </div>
+        <div class="nav3">
+            <i class="fa-regular fa-bell"></i>
+                    
+            
+        </div>
+        <div class="nav4">
+            
+            <div class="nav6">
+                <ul type="none">
+                    <li class="list2">Elizabeth F</li>
+                    <li class="list2">Admin</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+    <section class="cont2">
+        <div class="i11">
+            <strong>Hi Elizabeth</strong> <br><br>
+            Welcome to Dashboard!
+        </div>
+    </section>
+    <section class="cont3">
+        <div class="i21">
+            <div class="i211">
+                <img src="images/avatar-1.jpg" alt="">
+            </div>
+            <div class="i212">
+                <ul type="none">
+                    <li><strong>Elizabeth Foster</strong></li>
+                    <li>Web & Graphic Designer</li>
+                </ul>
+            </div>
+            <div class="i213">
+                <ul type="none">
+                    <li class="list10">xyz@gmail.com</li>
+                    <li class="list10">+00123-456-789</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="i214">
+                <ul type="none">
+                    <li class="list10">Project Completion   85%</li>
+                    <li class="list10">Overall rating       7.5</li>
+                </ul>
+            </div>
+        </div>
+        <div class="i22">
+            <ul type="none">
+                <li class="list3">
+                    <strong>21</strong> <br>
+                    Tasks Completed
+                </li>
+                <li class="list3">
+                    <strong>17</strong> <br>
+                    Tasks Inprogress
+                </li>
+            </ul>
+        </div>
+        <div class="i23">
+            <div class="i231">
+                <strong>Revenue</strong> <br>
+                $2,100 <br> 
+                Last Week  <br> 
+            </div>
+            <hr>
+            <div class="i232">
+                <ul type="none">
+                    <li class="list5">
+                        <strong>15%</strong> <br>
+                        Prev Week
+                    </li>
+                    <li class="list5">
+                        <strong>10%</strong> <br>
+                        Prev Month
+                    </li>
+                </ul>
+            </div>
+
+            
+
+        </div>
+        
+    </section>
+    <section class="cont4">
+        <div class="i31"><strong>Recent Projects</strong></div>
+        <div class="i32">View All ➡</div>
+    </section>
+
+    <section class="cont5">
+        <div class="i41">
+            <div class="i411">
+                <div class="4111">Apr 09, 2022</div>
+                <div class="4112">...</div>
+            </div> <br>
+            <div class="i412">
+                <strong>Shreyu - Design Updates</strong> <br>
+                <div class="i4121">Designing</div>
+            </div> <br>
+            <div class="i413">
+                Update shreyu with modern and latest <br> trends...
+            </div> <br>
+            <div class="i414">
+                <div class="i4141">Progress</div>
+                <div class="i4142">80%</div> 
+            </div> <br>
+            <div class="i415">
+                <img src="images/avatar-2.jpg" alt="">
+            </div>
+        </div>
+
+
+        <div class="i42">
+            <div class="i421">
+                <div class="4211">Apr 15, 2022</div>
+                <div class="4212">...</div>
+            </div> <br>
+            <div class="i422">
+                <strong>Prompt v2.0</strong> <br>
+                <div class="i4221">Planning</div>
+            </div> <br>
+            <div class="i423">
+                Plan new features and functionality for <br> prompt...
+            </div> <br>
+            <div class="i424">
+                <div class="i4241">Progress</div>
+                <div class="i4242">80%</div> 
+            </div> <br>
+            <div class="i425">
+                <img src="images/avatar-2.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="i43">
+            <div class="i431">
+                <div class="4311">June 05, 2022</div>
+                <div class="4312">...</div>
+            </div> <br>
+            <div class="i432">
+                <strong>Hyper React v4.0</strong> <br>
+                <div class="i4321">Development</div>
+            </div> <br>
+            <div class="i433">
+                Update shreyu with modern and latest <br> trends...
+            </div> <br>
+            <div class="i434">
+                <div class="i4341">Progress</div>
+                <div class="i4342">60%</div> 
+            </div> <br>
+            <div class="i435">
+                <img src="images/avatar-2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="cont6">
+        <div class="i51"><strong>Tasks</strong></div>
+        <div class="i52">View All ➡</div>
+    </section>
+
+    <section class="cont7">
+        <div class="i71">
+            <div class="i711">
+                <input type="checkbox"> Draft the new contract document for sales team
+            </div>
+            <div class="i712">
+                Today 10pm
+            </div>
+            <div class="i713">
+                <i class="fa-solid fa-list-check"></i> 3/7
+                <i class="fa-regular fa-message"></i> 21
+                <div class="i7111">High</div>
+            </div>
+        </div>
+        <div class="i72">
+            <div class="i721">
+                <input type="checkbox"> iOS App home page design
+            </div>
+            <div class="i722">
+                Today 5pm
+            </div>
+            <div class="i723">
+                <i class="fa-solid fa-list-check"></i> 3/7
+                <i class="fa-regular fa-message"></i> 21
+                <div class="i7211">Medium</div>
+            </div>
+        </div>
+        <div class="i73">
+            <div class="i731">
+                <input type="checkbox"> Enable analytics tracking
+            </div>
+            <div class="i732">
+                Tomorrow 5pm
+            </div>
+            <div class="i733">
+                <i class="fa-solid fa-list-check"></i> 3/7 
+                <i class="fa-regular fa-message"></i> 21
+                <div class="i7311">Medium</div>
+            </div>
+        </div>
+        <div class="i74">
+            <div class="i741">
+                <input type="checkbox"> Kanban board design
+            </div>
+            <div class="i742">
+                Sep 11, 3pm
+            </div>
+            <div class="i743">
+                <i class="fa-solid fa-list-check"></i> 3/7
+                <i class="fa-regular fa-message"></i> 21
+                <div class="i7411">Low</div>
+            </div>
+        </div>
+    </section>
+    <section class="cont8">
+        <div class="i81">
+            Load More
+        </div>
+    </section>
+    <section class="cont9">
+        <div class="i91">
+            <ul type="none">
+                <li class="list">About</li> -
+                <li class="list">Privacy</li> -
+                <li class="list">Terms</li> -
+                <li class="list">Developers</li> -
+                <li class="list">Support</li> -
+                <li class="list">Careers</li> 
+            </ul>
+        </div>
+        <div class="92">
+            @2022 codewithnaman.All Rights Reserved
+        </div>
+        
+    </section>
+</body>
+</html>
